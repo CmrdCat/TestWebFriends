@@ -3,7 +3,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: rgb(110 216 150);
+   background: linear-gradient(0deg, rgba(213,252,209,1) 0%, rgba(134,247,153,1) 51%, rgba(213,252,209,1) 100%);
    padding: 10px;
 }
 
