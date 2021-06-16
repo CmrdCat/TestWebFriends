@@ -1,9 +1,8 @@
 import React from 'react'
-import LoginBox from '../loginBox/';
-import SearchBox from '../searchbox/'
-import './header.css'
+import SearchBox from '../SearchBox/SearchBox'
+import './Header.css'
 
-function Header(setSearch) {
+function Header({setSearch}) {
    return (
       <div className='wrapper'>
          <div className="header">
@@ -11,7 +10,6 @@ function Header(setSearch) {
             <form>
                <SearchBox setSearch={setSearch} />
             </form>
-            <LoginBox />
          </div>
       </div>  
    );

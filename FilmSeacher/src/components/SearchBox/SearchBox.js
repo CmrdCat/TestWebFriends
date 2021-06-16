@@ -1,7 +1,7 @@
 import React from 'react'
-import "./searchbox.css"
+import "./SearchBox.css"
 
-function SearchBox(props) {
+function SearchBox({setSearch}) {
 
    return (
       <input 
@@ -11,7 +11,7 @@ function SearchBox(props) {
          onKeyPress={(event) => {
             if (event.key === 'Enter') {
                event.preventDefault()
-               props.setSearch.setSearch(event.target.value)
+               setSearch(event.target.value)
             }
          }}
       />
